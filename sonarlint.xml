@@ -1,0 +1,19 @@
+<application>
+  <component name="SonarLintGlobalSettings">
+    <option name="excludedRules">
+      <set>
+        <option value="squid:S1170" />
+      </set>
+    </option>
+    <option name="sonarQubeServers">
+      <list>
+        <SonarQubeServer>
+          <option name="hostUrl" value="https://udd-sonar.cnp.fr/sonar" />
+          <token>df93df98dfc8df9bdf9bdf9fdfccdf98df9ddf98dfcfdf98df93dfcfdf92df98df98dfcedfc8dfcfdf99df92df99df9edf92dfcbdf9adfc9dfc8dfcedf9fdfc9df98df9edf98df9adf98df9fdf9adf92</token>
+          <option name="name" value="CNP" />
+          <organizationKey>default-organization</organizationKey>
+        </SonarQubeServer>
+      </list>
+    </option>
+  </component>
+</application>

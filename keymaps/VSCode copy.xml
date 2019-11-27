@@ -1,0 +1,32 @@
+<keymap version="1" name="VSCode copy" parent="VSCode">
+  <action id="$Redo">
+    <keyboard-shortcut first-keystroke="shift ctrl z" />
+    <keyboard-shortcut first-keystroke="shift alt back_space" />
+    <keyboard-shortcut first-keystroke="ctrl y" />
+  </action>
+  <action id="CollapseDocComments">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="shift ctrl colon" />
+  </action>
+  <action id="Debugger.EditArrayFilter">
+    <keyboard-shortcut first-keystroke="f2" />
+  </action>
+  <action id="Diff.ShowDiff">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl d" />
+  </action>
+  <action id="Editor Redo">
+    <keyboard-shortcut first-keystroke="ctrl y" />
+  </action>
+  <action id="ExpandDocComments">
+    <keyboard-shortcut first-keystroke="ctrl k" second-keystroke="ctrl colon" />
+  </action>
+  <action id="SaveDocument">
+    <keyboard-shortcut first-keystroke="ctrl s" />
+  </action>
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="ctrl period" />
+    <keyboard-shortcut first-keystroke="ctrl semicolon" />
+  </action>
+  <action id="XDebugger.EditWatch">
+    <keyboard-shortcut first-keystroke="f2" />
+  </action>
+</keymap>

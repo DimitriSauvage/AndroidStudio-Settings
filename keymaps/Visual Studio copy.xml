@@ -1,0 +1,12 @@
+<keymap version="1" name="Visual Studio copy" parent="Visual Studio">
+  <action id="FileStructurePopup" />
+  <action id="GotoImplementation">
+    <keyboard-shortcut first-keystroke="ctrl alt b" />
+    <mouse-shortcut keystroke="control alt button1" />
+    <keyboard-shortcut first-keystroke="ctrl f12" />
+  </action>
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="ctrl semicolon" />
+  </action>
+</keymap>

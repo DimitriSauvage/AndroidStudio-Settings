@@ -1,0 +1,69 @@
+<templateSet group="__CUSTOM TEMPLATES">
+  <template name="try" value="try {&#10;&#10;} catch (Exception e) {&#10;    $END$&#10;}" description="Generate a try catch expression" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sysout" value="System.out.println($END$);" description="Print in console" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="foreach" value="for ($ELEMENT_TYPE$ $VAR$ : $ITERABLE_TYPE$) {&#10;  $END$&#10;}" description="Iterate Iterable | Array" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITERABLE_TYPE" expression="iterableVariable()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="iterableComponentType(ITERABLE_TYPE)" defaultValue="&quot;java.lang.Object&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="region" value="//region $DESCRIPTION$&#10;$END$&#10;//endregion" description="Region to fold code" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="&quot;Description&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fold" value="//&lt;editor-fold desc=&quot;$DESCRIPTION$&quot;&gt; &#10;$END$&#10;//&lt;/editor-fold&gt;" description="Editor fold for code folding" toReformat="true" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="complete()" defaultValue="&quot;Description&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ctor" value="/**&#10; * $DESCRIPTION$&#10; */&#10;public $CLASSNAME$() {&#10;    super();$END$&#10;}" description="Create a constructor" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="complete()" defaultValue="&quot;Default constructor&quot;" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="className()" defaultValue="&quot;ClassName&quot;" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prop" value="/**&#10; * $DESCRIPTION$&#10; */&#10;private $TYPE$ $NAME$;" description="Create a propety" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="complete()" defaultValue="&quot;Description&quot;" alwaysStopAt="true" />
+    <variable name="TYPE" expression="complete()" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="complete()" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for(int $INDEX$ = 0; $INDEX$ &lt; $LIMIT$; $INDEX$++) {&#10;  $END$&#10;}" description="Boucle for" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIMIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fortab" value="for(int $INDEX$ = 0; $INDEX$ &lt; $ARRAY$.length; $INDEX$++) {&#10;  $ELEMENT_TYPE$ $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Boucle for dans un tableau" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="arrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="componentTypeOf(Array)" defaultValue="" alwaysStopAt="false" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

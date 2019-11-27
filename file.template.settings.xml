@@ -1,0 +1,12 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="ApiController.java" reformat="true" live-template-enabled="true" />
+      <template name="Model.java" reformat="true" live-template-enabled="true" />
+      <template name="Repository.java" reformat="true" live-template-enabled="true" />
+      <template name="Repository Interface.java" reformat="true" live-template-enabled="true" />
+      <template name="Service.java" reformat="true" live-template-enabled="true" />
+      <template name="Service Interface.java" reformat="true" live-template-enabled="true" />
+    </default_templates>
+  </component>
+</application>
