@@ -1,7 +1,7 @@
 <application>
   <component name="ScalaSettings">
     <option name="COMPILE_SERVER_ID" value="a2500cd0-e28f-463f-9406-15e964834287" />
-    <option name="COMPILE_SERVER_SDK" value="1.8" />
+    <option name="COMPILE_SERVER_SDK" value="Project Default" />
     <option name="COMPILE_SERVER_JVM_PARAMETERS" value="-server -Xss100M" />
   </component>
 </application>
