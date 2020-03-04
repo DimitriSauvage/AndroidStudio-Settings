@@ -27,6 +27,7 @@
     <variable name="DESCRIPTION" expression="" defaultValue="&quot;Description&quot;" alwaysStopAt="true" />
     <context>
       <option name="JAVA_CODE" value="true" />
+      <option name="SCALA" value="true" />
     </context>
   </template>
   <template name="fold" value="//&lt;editor-fold desc=&quot;$DESCRIPTION$&quot;&gt; &#10;$END$&#10;//&lt;/editor-fold&gt;" description="Editor fold for code folding" toReformat="true" toShortenFQNames="true">
