@@ -1,9 +1,0 @@
-<application>
-  <component name="UISettings">
-    <option name="ANIMATE_WINDOWS" value="false" />
-    <option name="MARK_MODIFIED_TABS_WITH_ASTERISK" value="true" />
-    <option name="MAX_LOOKUP_WIDTH2" value="601" />
-    <option name="OPEN_TABS_AT_THE_END" value="true" />
-    <option name="SHOW_MEMORY_INDICATOR" value="true" />
-  </component>
-</application>
