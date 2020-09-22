@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="webp" type="Image" />
       <mapping pattern="arcadeKeyStore" type="PLAIN_TEXT" />
       <mapping pattern="keystore_ado_ct" type="PLAIN_TEXT" />
     </extensionMap>
